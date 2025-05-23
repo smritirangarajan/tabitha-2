@@ -37,3 +37,4 @@ coverage/
 # Optional: ignore your own Chrome user data or browser cache if included
 chrome-user-data/
 .env
+smart-browser/.env
