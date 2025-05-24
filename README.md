@@ -1,24 +1,23 @@
-# Tabitha – Smart Browser Assistant
+Tabitha is a smart Chrome extension that helps you take control of your browser tabs and history. Designed to reduce tab overload and make your browsing more intentional, Tabitha tracks and organizes your open tabs and history in real-time—then layers in AI to surface insights and boost productivity.
+# Features
 
-Tabitha is an intelligent Chrome browser assistant that lets you search your browsing history using natural language. Powered by Claude (Anthropic) and enhanced with analytics and recommendations, Tabitha understands queries like:
+🔍 Smart Search
+Easily find what you were working on and when. Tabitha's intelligent search links related tabs and searches across time, helping you quickly pick up where you left off.
 
-"Second YouTube workout video from last Tuesday"
-"Funny TikTok from yesterday"
-"Instagram post from day before yesterday"
+📊 Insights & Analytics
+See your browsing habits like never before. Tabitha automatically categorizes the types of sites you visit and presents a clean breakdown of your activity. Discover which topics dominate your attention—and where your time is going.
 
-## ✨ Features
+🧠 AI-Powered Recommendations
+Whether it’s suggesting related content or helping you cluster similar tabs, Tabitha leverages AI to enhance how you browse and learn online.
 
-🔍 Smart Search – Search Chrome history using vague, human-friendly queries.
+🗂️ Organized History View
+Your browser history doesn’t have to be a mess. Tabitha offers a clean interface to review, filter, and even reorder your history. The built-in AI helps sort and group history entries for easier recall and organization.
 
-📊 Insights Dashboard – Analyze your top websites, usage by hour, and weekday vs. weekend habits.
 
-💡 AI Recommendations – Get suggestions on what to bookmark and revisit based on recent behavior.
 
-📁 Full History Table – Explore a detailed table view of your browsing history.
+# 🛠 Tech Stack
 
-🛠 Tech Stack
-
-Frontend: React + Vite + TailwindCSS
+Frontend: React + Vite + TailwindCSS + Node.js + Express
 
 Backend: Python (Flask)
 
