@@ -1,79 +1,67 @@
-🧠 Tabitha – Smart Browser Assistant
-Tabitha is an intelligent browser assistant that lets you search your Chrome history using natural language. Powered by Claude (Anthropic) and custom logic, Tabitha understands vague queries like:
+# Tabitha – Smart Browser Assistant
 
-“Second YouTube workout video from last Tuesday”
-“Funny TikTok from yesterday”
-“The last Instagram post I saw before midnight”
+Tabitha is an intelligent Chrome browser assistant that lets you search your browsing history using natural language. Powered by Claude (Anthropic) and enhanced with analytics and recommendations, Tabitha understands queries like:
 
-✨ Features
-Feature	Description
-🔍 Smart Search	Use natural language to find past sites, videos, and more from your Chrome history.
-📊 Insights	Visual breakdown of your top sites, favorite hours, and weekday/weekend browsing behavior.
-🧠 AI Recommendations	Personalized suggestions: sites to bookmark and sites to revisit now based on recent patterns.
-📁 History Table	View a searchable, sortable table of your full Chrome history.
+"Second YouTube workout video from last Tuesday"
+"Funny TikTok from yesterday"
+"Instagram post from day before yesterday"
+
+## ✨ Features
+
+🔍 Smart Search – Search Chrome history using vague, human-friendly queries.
+
+📊 Insights Dashboard – Analyze your top websites, usage by hour, and weekday vs. weekend habits.
+
+💡 AI Recommendations – Get suggestions on what to bookmark and revisit based on recent behavior.
+
+📁 Full History Table – Explore a detailed table view of your browsing history.
 
 🛠 Tech Stack
-React & Vite (Frontend)
 
-TailwindCSS for UI styling
+Frontend: React + Vite + TailwindCSS
 
-Flask (Backend API)
+Backend: Python (Flask)
 
-Anthropic Claude API for language understanding
+LLM: Anthropic Claude (Haiku)
 
-Chrome Extensions API for history/bookmarks
+Extension: Chrome Extensions API (Manifest V3)
 
 🚀 Getting Started
-1. Clone the repository
-bash
-Copy
-Edit
+
+1. Clone the Repository
+
 git clone https://github.com/smritirangarajan/tabitha.git
 cd tabitha
-2. Set up your environment variables
-Create a .env file in smart-browser/ with your Claude API key:
 
-env
-Copy
-Edit
-CLAUDE_API_KEY=your_api_key_here
-3. Install dependencies
-Frontend:
+2. Set Up Environment Variables
 
-bash
-Copy
-Edit
-cd tabitha-frontend
-npm install
-Backend:
+Create a .env file in smart-browser/:
 
-bash
-Copy
-Edit
-cd ../smart-browser
+CLAUDE_API_KEY=your_claude_api_key_here
+
+3. Install Dependencies
+
+## Backend
+cd smart-browser
 pip install -r requirements.txt
-4. Run the app
-Backend (Flask):
 
-bash
-Copy
-Edit
+## Frontend
+cd ../tabitha-frontend
+npm install
+
+4. Run the App
+
+## Start Flask API
+cd smart-browser
 python3 app.py
-Frontend (Vite):
 
-bash
-Copy
-Edit
+## Start Vite Dev Server
 cd ../tabitha-frontend
 npm run dev
-5. Load extension in Chrome
-Go to chrome://extensions
 
-Enable "Developer mode"
+5. Build for Chrome Extension
 
-Click "Load unpacked" and select the tabitha-frontend/dist folder after building:
-
-bash
-Copy
-Edit
+cd tabitha-frontend
 npm run build
+
+Then go to chrome://extensions, enable Developer Mode, and load the dist/ folder.
