@@ -17,7 +17,8 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        popup: path.resolve(__dirname, 'popup.html')
+        popup: path.resolve(__dirname, 'popup.html'),
+        history: path.resolve(__dirname, 'history.html'),
       }
     }
   }
