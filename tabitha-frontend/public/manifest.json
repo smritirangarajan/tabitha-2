@@ -4,7 +4,10 @@
   "version": "1.0",
   "description": "Use natural language to find and summarize past pages",
   "permissions": ["history"],
-  "host_permissions": ["http://localhost:5000/"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
