@@ -30,7 +30,7 @@ Extension: Chrome Extensions API (Manifest V3)
 
 1. Clone the Repository
 
-git clone https://github.com/smritirangarajan/tabitha.git
+git clone
 cd tabitha
 
 2. Set Up Environment Variables
