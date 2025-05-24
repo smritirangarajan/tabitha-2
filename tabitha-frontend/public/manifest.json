@@ -3,7 +3,7 @@
   "name": "Smart History Search",
   "version": "1.0",
   "description": "Use natural language to find and summarize past pages",
-  "permissions": ["history"],
+  "permissions": ["history", "storage"],
   "host_permissions": ["http://localhost:5000/"],
   "action": {
     "default_popup": "popup.html",
